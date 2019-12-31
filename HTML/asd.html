@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <script>
+        function local(pin,staut)
+        {
+            var xmlhttp = new XMLHttpRequest();
+            xmlhttp.open("GET","/pin?pin="+pin+"&light="+staut,true);
+            xmlhttp.send();
+        }
+        </script>
+        <title>Welcome ESP8266 for Light</title>
+    </head>
+    <body>
+        <div>
+            <a href="#" onclick="local(1,'on')"><input type="button" value="CLOSE" style="font-size: 24px; padding: 10px; margin: 20px;"></a>
+            <a href="#" onclick="local(1,'off')"><input type="button" value="OPEN" style="font-size: 24px; padding: 10px; margin: 20px; float: right;"></a>
+        </div>
+        <div>
+            <a href="#" onclick="local(2,'off')"><input type="button" value="OPEN" style="font-size: 24px; padding: 10px; margin: 20px; float: right;"></a>
+            <a href="#" onclick="local(2,'on')"><input type="button" value="CLOSE" style="font-size: 24px; padding: 10px; margin: 20px;"></a>
+        </div>
+        <div>
+            <a href="#" onclick="local(3,'off')"><input type="button" value="OPEN" style="font-size: 24px; padding: 10px; margin: 20px; float: right;"></a>
+            <a href="#" onclick="local(3,'on')"><input type="button" value="CLOSE" style="font-size: 24px; padding: 10px; margin: 20px;"></a>
+        </div>
+        <div>
+            <a href="#" onclick="local(4,'off')"><input type="button" value="OPEN" style="font-size: 24px; padding: 10px; margin: 20px; float: right;"></a>
+            <a href="#" onclick="local(4,'on')"><input type="button" value="CLOSE" style="font-size: 24px; padding: 10px; margin: 20px;"></a>
+        </div>
+    </body>
+</html>
